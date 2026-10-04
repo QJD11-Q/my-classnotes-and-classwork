@@ -1,0 +1,37 @@
+# ---- C 语言编译产物 ----
+# 这些是「结果」，不是「源码」，不需要入库
+*.exe
+*.o
+*.obj
+*.out
+*.gch
+a.out
+
+# ---- Dev-C++ 专有文件 ----
+*.dev
+*.layout
+*.depend
+*.winres
+
+# ---- Python（以后会用到）----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- 数据与模型大文件（以后做项目时用）----
+# 数据集和训练好的权重通常太大，不入库，改用说明文档记录来源
+data/
+datasets/
+*.pth
+*.pt
+*.onnx
+*.h5
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
