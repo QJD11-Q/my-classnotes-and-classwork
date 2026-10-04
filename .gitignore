@@ -31,6 +31,7 @@ datasets/
 *.h5
 
 # ---- 编辑器 / 系统 ----
+# .vscode/ 里放的是我本机的编译路径(D:\Dev-Cpp)，别人电脑上不一样，不入库
 .vscode/
 .idea/
 .DS_Store
