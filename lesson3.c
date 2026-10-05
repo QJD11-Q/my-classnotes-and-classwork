@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 int main(){
-    system("chcp 65001 > nul");
+    system("chcp 65001 > nu1");
     printf("请输入两个整数:");
     int a,b;
     scanf("%d %d", &a, &b);
