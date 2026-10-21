@@ -14,6 +14,8 @@
 | [`04-first-50-primes.cpp`](04-first-50-primes.cpp) | 输出**前 50 个素数** | 双重 `for` + `break` | 用 `isprime--` 当标志位 |
 | [`05-coin-combination.cpp`](05-coin-combination.cpp) | **凑硬币**：1角+2角+5角 = x 元 | 三重 `for` + `goto` | ⚠️ 见下方说明 |
 | [`06-harmonic-sum.cpp`](06-harmonic-sum.cpp) | 输入 n，算 **f(n) = 1 + 1/2 + ... + 1/n** | `for` + `double` | 注意 `1.0/i` 的写法 |
+| [`07sijieshudu.cpp`](07sijieshudu.cpp) | **四阶数独**：4×4 填 1~4，每行/每列/每个 2×2 宫都不重复，统计解的个数 | **回溯 DFS** | 共 **288 个解**（对拍标准） |
+| [`08bahuangho.cpp`](08bahuangho.cpp) | **八皇后**（洛谷 P1219）：N 个皇后互不攻击，输出前 3 个解 + 解的总数 | **回溯 DFS** + `abs` 判断对角线 | n=8 → **92 个解** |
 
 ## 编译运行
 
@@ -36,6 +38,10 @@ g++ -Wall -finput-charset=UTF-8 文件名.cpp -o 文件名.exe
 | `goto` 跳出多层循环 | 05 |
 | 整数取位（`% 10` 和 `/ 10`） | 01 |
 | 浮点除法（`1.0/i`） | 06 |
+| **回溯 DFS（放 → 递归 → 撤销）** | **07、08** |
+| **`abs()` 判断对角线** | 08 |
+| **二维转一维：`pos/4`（行）、`pos%4`（列）** | 07 |
+| **2×2 宫起点：`(r/2)*2`** | 07 |
 
 ## ⚠️ 两个待改进的地方
 
